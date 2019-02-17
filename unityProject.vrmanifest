@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.beaturcomputer.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\beat-ur-computer\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "beat ur computer [Testing]"
+        }
+      }
+    }
+  ]
+}
