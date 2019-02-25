@@ -1,0 +1,14 @@
+# Blender MTL File: 'ceta class room.blend'
+# Material Count: 1
+
+newmtl Material_32
+Ns 1000.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 3
+map_Kd D:\\Mitchell\\Unity projects\\beat ur computer\\Assets\Models\\Textures\\5.png
+map_Ks D:\\Mitchell\\Unity projects\\beat ur computer\\Assets\Models\\Textures\\6.png
