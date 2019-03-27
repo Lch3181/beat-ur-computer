@@ -5222,10 +5222,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9e05785a5036cd49a24d8173cdb3e3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameObject: {fileID: 3262193466141370770}
   collisionSound: {fileID: 2814261097201579019}
   effect: {fileID: 0}
   particleSys: {fileID: 8764950894255650976}
-  rb: {fileID: 4803111359302375593}
 --- !u!1 &4817937361926396398
 GameObject:
   m_ObjectHideFlags: 0

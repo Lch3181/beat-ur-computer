@@ -5,78 +5,62 @@ using UnityEngine;
 
 public class Collision : MonoBehaviour
 {
-    public AudioSource collisionSound;
+    public GameObject gameObject;
     public GameObject effect;
-    public ParticleSystem particleSys;
-    public Rigidbody rb;
+    public GameObject explosion;
+    public int HP;
 
     float delay = 1f;
-
-    //[Tooltip("Smallest velocity for sound to play")]
-
-    // public float impactVelocity;
 
     private void Update()
     {
         delay -= Time.deltaTime;
     }
 
-
+    //collision enter
     private void OnCollisionEnter(UnityEngine.Collision collision)
     {
-        float velocity = rb.velocity.magnitude;
+        //get rigidbody
+        Rigidbody rigidbody = gameObject.GetComponent<Rigidbody>();
 
-         if (velocity >  1)
-         {
-        print("PLaying effect");
-            if(effect != null)
-                Instantiate(effect, rb.position, transform.rotation);
+        //get velocity
+        float velocity = rigidbody.velocity.magnitude;
 
-            if (particleSys != null)
+        //if velocity > 1
+        if (velocity > 1)
+        {
+            //effect
+            if (effect != null)
+                Instantiate(effect, rigidbody.position, transform.rotation);
+
+            //particle system
+            if (gameObject.GetComponentInChildren<ParticleSystem>() != null)
             {
-                //Instantiate(particleSys, rb.position, transform.rotation);
-                particleSys.Play();
+                print(1);
+                gameObject.GetComponentInChildren<ParticleSystem>().Play();
                 delay = 7f;
             }
 
+            //sound
+            if (gameObject.GetComponent<AudioSource>() != null)
+            {
+                gameObject.GetComponent<AudioSource>().pitch = Random.Range(0.2f, .8f);
+                gameObject.GetComponent<AudioSource>().Play();
 
-        }
+            }
 
+            //explosion
+            if (explosion != null)
+            {
+                //create explosion
+                GameObject explode = Instantiate(explosion, rigidbody.position, Quaternion.identity) as GameObject;
+                explode.AddComponent<Rigidbody>();
+                delay = 7f;
 
-
-
-        collisionSound.pitch = Random.Range(0.2f, .8f);
-
-        print("Velocity = " + rb.velocity.magnitude);
-        print("Pitch = " + collisionSound.pitch);
-
-
-        //if (velocity > 0 && velocity < 1)
-        //{
-        //    collisionSound.volume = .10f;
-        //}
-        //if (velocity > 1 && velocity < 5)
-        //{
-        //    collisionSound.volume = .35f;
-        //}
-        //if (velocity > 5 && velocity < 8)
-        //{
-        //    collisionSound.volume = .55f;
-        //}
-        //if (velocity > 8 && velocity < 20)
-        //{
-        //    collisionSound.volume = .75f;
-        //}
-        //if (velocity > 20)
-        //{
-        //    collisionSound.volume = 1f;
-        //}
-
-        if (velocity > 1)
-        {
-            
-            collisionSound.Play();
-            
+                //delete object
+                Destroy(gameObject);
+                Destroy(explode, 10);
+            }
         }
 
     }

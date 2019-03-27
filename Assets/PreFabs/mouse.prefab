@@ -388,6 +388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9e05785a5036cd49a24d8173cdb3e3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameObject: {fileID: 9171401492170075981}
   collisionSound: {fileID: 7272377087329217067}
   effect: {fileID: 0}
-  rb: {fileID: 9171401492170075977}
+  particleSys: {fileID: 0}
