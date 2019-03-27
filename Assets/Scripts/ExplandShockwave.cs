@@ -2,22 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Resize : MonoBehaviour
+public class ExplandShockwave : MonoBehaviour
 {
+    public SphereCollider sphereCollider;
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        
+        if (sphereCollider.radius <= 20)
+            sphereCollider.radius += 5;
     }
 }

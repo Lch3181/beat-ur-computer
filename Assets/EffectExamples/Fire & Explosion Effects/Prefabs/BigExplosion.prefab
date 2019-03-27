@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4388947112716342}
   - component: {fileID: 198917022394846920}
   - component: {fileID: 199630755385234010}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BigExplosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3603,7 +3603,7 @@ ParticleSystem:
     serializedVersion: 3
     type: 1
     collisionMode: 0
-    colliderForce: 250
+    colliderForce: 1000
     multiplyColliderForceByParticleSize: 0
     multiplyColliderForceByParticleSpeed: 0
     multiplyColliderForceByCollisionAngle: 1
@@ -3777,9 +3777,9 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 4294967295
+      m_Bits: 1847
     maxCollisionShapes: 256
-    quality: 0
+    quality: 1
     voxelSize: 0.5
     collisionMessages: 0
     collidesWithDynamic: 1
@@ -4808,7 +4808,7 @@ GameObject:
   - component: {fileID: 4657243524966140}
   - component: {fileID: 198805160044956896}
   - component: {fileID: 199271172029159390}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Embers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8277,9 +8277,9 @@ ParticleSystem:
   CollisionModule:
     enabled: 0
     serializedVersion: 3
-    type: 0
+    type: 1
     collisionMode: 0
-    colliderForce: 0
+    colliderForce: 1000
     multiplyColliderForceByParticleSize: 0
     multiplyColliderForceByParticleSpeed: 0
     multiplyColliderForceByCollisionAngle: 1
@@ -8453,7 +8453,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 4294967295
+      m_Bits: 1847
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -9484,7 +9484,7 @@ GameObject:
   - component: {fileID: 4285441741452706}
   - component: {fileID: 198751835582626154}
   - component: {fileID: 199877337873867354}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: SmokeTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14182,7 +14182,7 @@ GameObject:
   - component: {fileID: 4116738740604250}
   - component: {fileID: 198844874048127756}
   - component: {fileID: 199459376760036170}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Embers (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18857,7 +18857,7 @@ GameObject:
   - component: {fileID: 4564415660777050}
   - component: {fileID: 198918736123329914}
   - component: {fileID: 199729880478975070}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22406,9 +22406,9 @@ ParticleSystem:
   CollisionModule:
     enabled: 0
     serializedVersion: 3
-    type: 0
+    type: 1
     collisionMode: 0
-    colliderForce: 0
+    colliderForce: 1000
     multiplyColliderForceByParticleSize: 0
     multiplyColliderForceByParticleSpeed: 0
     multiplyColliderForceByCollisionAngle: 1
@@ -22582,7 +22582,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 4294967295
+      m_Bits: 1847
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -23613,7 +23613,7 @@ GameObject:
   - component: {fileID: 4810292286833524}
   - component: {fileID: 198003277540838118}
   - component: {fileID: 199565671101574698}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Debris
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27339,7 +27339,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 4294967295
+      m_Bits: 1847
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -28370,7 +28370,7 @@ GameObject:
   - component: {fileID: 4834897586904354}
   - component: {fileID: 198604367962915600}
   - component: {fileID: 199375762842987212}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: AdditonalSmoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31937,9 +31937,9 @@ ParticleSystem:
   CollisionModule:
     enabled: 0
     serializedVersion: 3
-    type: 0
+    type: 1
     collisionMode: 0
-    colliderForce: 0
+    colliderForce: 1000
     multiplyColliderForceByParticleSize: 0
     multiplyColliderForceByParticleSpeed: 0
     multiplyColliderForceByCollisionAngle: 1
@@ -32113,7 +32113,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 4294967295
+      m_Bits: 1847
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -33144,7 +33144,9 @@ GameObject:
   - component: {fileID: 4584238095464974}
   - component: {fileID: 198166025632870074}
   - component: {fileID: 199280120914940710}
-  m_Layer: 0
+  - component: {fileID: 8084914163341432085}
+  - component: {fileID: 2657794611452574547}
+  m_Layer: 11
   m_Name: Shockwave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36691,7 +36693,7 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     range: {x: 0, y: 1}
   CollisionModule:
-    enabled: 1
+    enabled: 0
     serializedVersion: 3
     type: 1
     collisionMode: 0
@@ -36869,7 +36871,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 4294967295
+      m_Bits: 1847
     maxCollisionShapes: 256
     quality: 1
     voxelSize: 1
@@ -37889,3 +37891,29 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!135 &8084914163341432085
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754131149069982}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2657794611452574547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754131149069982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d131c481e5891a4babad2781c3af5d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sphereCollider: {fileID: 8084914163341432085}

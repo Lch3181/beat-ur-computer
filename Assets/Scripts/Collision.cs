@@ -10,7 +10,7 @@ public class Collision : MonoBehaviour
     public GameObject explosion;
     public int HP;
 
-    float delay = 1f;
+    float delay = 0f;
 
     private void Update()
     {
@@ -36,15 +36,13 @@ public class Collision : MonoBehaviour
             //particle system
             if (gameObject.GetComponentInChildren<ParticleSystem>() != null)
             {
-                print(1);
                 gameObject.GetComponentInChildren<ParticleSystem>().Play();
-                delay = 7f;
             }
 
             //sound
             if (gameObject.GetComponent<AudioSource>() != null)
             {
-                gameObject.GetComponent<AudioSource>().pitch = Random.Range(0.2f, .8f);
+                gameObject.GetComponent<AudioSource>().pitch = Random.Range(.8f, 16f);
                 gameObject.GetComponent<AudioSource>().Play();
 
             }
@@ -54,12 +52,10 @@ public class Collision : MonoBehaviour
             {
                 //create explosion
                 GameObject explode = Instantiate(explosion, rigidbody.position, Quaternion.identity) as GameObject;
-                explode.AddComponent<Rigidbody>();
-                delay = 7f;
-
+                
                 //delete object
                 Destroy(gameObject);
-                Destroy(explode, 10);
+                Destroy(explode, 2);
             }
         }
 
