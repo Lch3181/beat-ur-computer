@@ -390,9 +390,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObject: {fileID: 26918100874350271}
-  collisionSound: {fileID: 6401137329872264628}
   effect: {fileID: 0}
-  particleSys: {fileID: 1412740272230065260}
+  explosion: {fileID: 0}
+  HP: 100
 --- !u!1 &7853517103322123320
 GameObject:
   m_ObjectHideFlags: 0

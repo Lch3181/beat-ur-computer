@@ -5223,9 +5223,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObject: {fileID: 3262193466141370770}
-  collisionSound: {fileID: 2814261097201579019}
   effect: {fileID: 0}
-  particleSys: {fileID: 8764950894255650976}
+  explosion: {fileID: 0}
+  HP: 100
 --- !u!1 &4817937361926396398
 GameObject:
   m_ObjectHideFlags: 0

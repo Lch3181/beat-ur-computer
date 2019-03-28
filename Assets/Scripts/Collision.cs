@@ -8,7 +8,7 @@ public class Collision : MonoBehaviour
     public GameObject gameObject;
     public GameObject effect;
     public GameObject explosion;
-    public int HP;
+    public float HP;
 
     float delay = 0f;
 
@@ -29,6 +29,8 @@ public class Collision : MonoBehaviour
         //if velocity > 1
         if (velocity > 1)
         {
+            //decrease HP
+            HP -= velocity * 10f;
             //effect
             if (effect != null)
                 Instantiate(effect, rigidbody.position, transform.rotation);
@@ -36,25 +38,51 @@ public class Collision : MonoBehaviour
             //particle system
             if (gameObject.GetComponentInChildren<ParticleSystem>() != null)
             {
-                gameObject.GetComponentInChildren<ParticleSystem>().Play();
+                if(gameObject.name=="Desk")
+                {
+                    gameObject.GetComponentInChildren<ParticleSystem>().Play();
+                }
+                else if(gameObject.name=="mouse")
+                {
+                    gameObject.GetComponentInChildren<ParticleSystem>().Play();
+                }
+                else if (gameObject.name == "tower" && HP<=50)
+                {
+                    gameObject.GetComponentInChildren<ParticleSystem>().Play();
+                }
+                else if (gameObject.name == "Chair")
+                {
+                    gameObject.GetComponentInChildren<ParticleSystem>().Play();
+                }
+                else if (gameObject.name == "Keyboard")
+                {
+                    gameObject.GetComponentInChildren<ParticleSystem>().Play();
+                }
+                else if (gameObject.name == "DisplayScreen1" || gameObject.name=="DisplayScreen2")
+                {
+                    gameObject.GetComponentInChildren<ParticleSystem>().Play();
+                }
             }
 
             //sound
             if (gameObject.GetComponent<AudioSource>() != null)
             {
-                gameObject.GetComponent<AudioSource>().pitch = Random.Range(.8f, 16f);
+                gameObject.GetComponent<AudioSource>().pitch = Random.Range(.5f, 1f);
                 gameObject.GetComponent<AudioSource>().Play();
 
             }
 
             //explosion
-            if (explosion != null)
+            if (explosion != null && HP <= 0)
             {
                 //create explosion
                 GameObject explode = Instantiate(explosion, rigidbody.position, Quaternion.identity) as GameObject;
-                
+
                 //delete object
-                Destroy(gameObject);
+                Destroy(gameObject.GetComponent<MeshCollider>());
+                Destroy(gameObject.GetComponent<MeshFilter>());
+                Destroy(gameObject.GetComponent<MeshRenderer>());
+                Destroy(gameObject, 2);
                 Destroy(explode, 2);
             }
         }

@@ -248,7 +248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundDecayEffectSwitch: 1
-  gain: 4
+  gain: 24
   soundDecayMode: 0
   reverbMode: 1
   binauralEngine: 0
