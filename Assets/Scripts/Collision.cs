@@ -87,10 +87,10 @@ public class Collision : MonoBehaviour
             }
 
             //sound
-            if (gameObject.GetComponent<AudioSource>() != null)
+            if (gameObject.GetComponentInChildren<AudioSource>() != null)
             {
-                gameObject.GetComponent<AudioSource>().pitch = Random.Range(.5f, 1f);
-                gameObject.GetComponent<AudioSource>().Play();
+                gameObject.GetComponentInChildren<AudioSource>().pitch = Random.Range(.5f, 1f);
+                gameObject.GetComponentInChildren<AudioSource>().Play();
 
             }
 
