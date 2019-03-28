@@ -6,15 +6,37 @@ using UnityEngine;
 public class Collision : MonoBehaviour
 {
     public GameObject gameObject;
+    public GameObject Prefab;
     public GameObject effect;
     public GameObject explosion;
     public float HP;
 
-    float delay = 0f;
+    private int totalDonut = 0;
+    private float delay = 1f;
 
     private void Update()
     {
         delay -= Time.deltaTime;
+
+        //donut respawn
+        if (gameObject.name == "Donuts")
+        {
+            if (transform.childCount < 3 && delay <= 0)
+            {
+                //get transform
+                Transform transform = gameObject.GetComponent<Transform>();
+                //spawn
+                var newDonut = Instantiate(Prefab, transform.position, Quaternion.identity);
+                newDonut.transform.parent = gameObject.transform;
+
+                //cooldown
+                delay = 5f;
+
+                //donut count
+                totalDonut++;
+            }
+        }
+
     }
 
     //collision enter
@@ -38,15 +60,15 @@ public class Collision : MonoBehaviour
             //particle system
             if (gameObject.GetComponentInChildren<ParticleSystem>() != null)
             {
-                if(gameObject.name=="Desk")
+                if (gameObject.name == "Desk")
                 {
                     gameObject.GetComponentInChildren<ParticleSystem>().Play();
                 }
-                else if(gameObject.name=="mouse")
+                else if (gameObject.name == "mouse")
                 {
                     gameObject.GetComponentInChildren<ParticleSystem>().Play();
                 }
-                else if (gameObject.name == "tower" && HP<=50)
+                else if (gameObject.name == "tower" && HP <= 50)
                 {
                     gameObject.GetComponentInChildren<ParticleSystem>().Play();
                 }
@@ -58,7 +80,7 @@ public class Collision : MonoBehaviour
                 {
                     gameObject.GetComponentInChildren<ParticleSystem>().Play();
                 }
-                else if (gameObject.name == "DisplayScreen1" || gameObject.name=="DisplayScreen2")
+                else if (gameObject.name == "DisplayScreen1" || gameObject.name == "DisplayScreen2")
                 {
                     gameObject.GetComponentInChildren<ParticleSystem>().Play();
                 }
@@ -75,17 +97,18 @@ public class Collision : MonoBehaviour
             //explosion
             if (explosion != null && HP <= 0)
             {
+
                 //create explosion
                 GameObject explode = Instantiate(explosion, rigidbody.position, Quaternion.identity) as GameObject;
 
                 //delete object
-                Destroy(gameObject.GetComponent<MeshCollider>());
-                Destroy(gameObject.GetComponent<MeshFilter>());
-                Destroy(gameObject.GetComponent<MeshRenderer>());
+                gameObject.GetComponent<MeshCollider>().enabled = false;
+                gameObject.GetComponent<MeshFilter>().mesh = null;
+                gameObject.GetComponent<MeshRenderer>().enabled = false;
                 Destroy(gameObject, 2);
                 Destroy(explode, 2);
             }
-        }
 
+        }
     }
 }

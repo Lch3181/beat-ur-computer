@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 5184925118343841793}
   - component: {fileID: 2428444138196014433}
   - component: {fileID: 2699340223411314062}
-  - component: {fileID: 8299933703874496531}
+  - component: {fileID: 6477627642508953930}
   m_Layer: 0
   m_Name: Donut
   m_TagString: Untagged
@@ -35,7 +35,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2490790812124449215}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.983662, y: 0.87, z: -3.3686461}
+  m_LocalPosition: {x: -1.5, y: 4, z: -11.1}
   m_LocalScale: {x: 0.074999996, y: 0.074999996, z: 0.074999996}
   m_Children: []
   m_Father: {fileID: 0}
@@ -401,7 +401,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &8299933703874496531
+--- !u!114 &6477627642508953930
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -414,6 +414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObject: {fileID: 2490790812124449215}
+  Prefab: {fileID: 2490790812124449215}
   effect: {fileID: 0}
   explosion: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664, type: 3}
   HP: 1
