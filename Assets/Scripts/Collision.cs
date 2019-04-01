@@ -71,6 +71,8 @@ public class Collision : MonoBehaviour
                 else if (gameObject.name == "tower" && HP <= 50)
                 {
                     gameObject.GetComponentInChildren<ParticleSystem>().Play();
+                    var main = gameObject.GetComponentInChildren<ParticleSystem>().main;
+                    main.loop = true;
                 }
                 else if (gameObject.name == "Chair")
                 {
