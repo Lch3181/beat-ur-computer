@@ -436,7 +436,7 @@ PrefabInstance:
     - target: {fileID: 400800195534375620, guid: 3ed24f636638172428ee2820ea42dd9d,
         type: 3}
       propertyPath: m_Name
-      value: Particle System
+      value: Spark
       objectReference: {fileID: 0}
     - target: {fileID: 400800195534375620, guid: 3ed24f636638172428ee2820ea42dd9d,
         type: 3}

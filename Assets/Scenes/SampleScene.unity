@@ -818,14 +818,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 668494911}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9e05785a5036cd49a24d8173cdb3e3e, type: 3}
+  m_Script: {fileID: 11500000, guid: ad5c6a90c82ca9741b422e5a721e6677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gameObject: {fileID: 668494911}
   Prefab: {fileID: 2490790812124449215, guid: 36de2ef4fe11c8a4f9d20737450fd786, type: 3}
-  effect: {fileID: 0}
-  explosion: {fileID: 0}
-  HP: 1
 --- !u!1 &692866289
 GameObject:
   m_ObjectHideFlags: 0
@@ -4277,6 +4274,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Baseball_Bat
       objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7aabeb57cb49e3b43a47ce90e0a82db5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7aabeb57cb49e3b43a47ce90e0a82db5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7aabeb57cb49e3b43a47ce90e0a82db5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7aabeb57cb49e3b43a47ce90e0a82db5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 21.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7aabeb57cb49e3b43a47ce90e0a82db5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 91.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7aabeb57cb49e3b43a47ce90e0a82db5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -38.3
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 7aabeb57cb49e3b43a47ce90e0a82db5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.3919735
@@ -4332,30 +4353,6 @@ PrefabInstance:
     - target: {fileID: 400002, guid: 7aabeb57cb49e3b43a47ce90e0a82db5, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7aabeb57cb49e3b43a47ce90e0a82db5, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7aabeb57cb49e3b43a47ce90e0a82db5, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7aabeb57cb49e3b43a47ce90e0a82db5, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7aabeb57cb49e3b43a47ce90e0a82db5, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 21.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7aabeb57cb49e3b43a47ce90e0a82db5, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 91.28
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7aabeb57cb49e3b43a47ce90e0a82db5, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -38.3
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 7aabeb57cb49e3b43a47ce90e0a82db5, type: 3}
       propertyPath: m_Materials.Array.data[0]

@@ -6,7 +6,6 @@ using UnityEngine;
 public class Collision : MonoBehaviour
 {
     public GameObject gameObject;
-    public GameObject Prefab;
     public GameObject effect;
     public GameObject explosion;
     public float HP;
@@ -25,25 +24,6 @@ public class Collision : MonoBehaviour
     private void Update()
     {
         delay -= Time.deltaTime;
-
-        //donut respawn
-        if (gameObject.name == "Donuts")
-        {
-            if (transform.childCount < 2 && delay <= 0)
-            {
-                //get transform
-                Transform transform = gameObject.GetComponent<Transform>();
-                //spawn
-                var newDonut = Instantiate(Prefab, transform.position, Quaternion.identity);
-                newDonut.transform.parent = gameObject.transform;
-
-                //cooldown
-                delay = 5f;
-
-                //donut count
-                totalDonut++;
-            }
-        }
 
     }
 
@@ -76,15 +56,6 @@ public class Collision : MonoBehaviour
                 {
                     gameObject.GetComponentInChildren<ParticleSystem>().Play();
                 }
-<<<<<<< HEAD
-=======
-                else if (gameObject.name == "tower" && HP <= 50)
-                {
-                    gameObject.GetComponentInChildren<ParticleSystem>().Play();
-                    var main = gameObject.GetComponentInChildren<ParticleSystem>().main;
-                    main.loop = true;
-                }
->>>>>>> 056e5e38154f76d8b42c922af7f7b0db6a390437
                 else if (gameObject.name == "Chair")
                 {
                     gameObject.GetComponentInChildren<ParticleSystem>().Play();
@@ -110,6 +81,8 @@ public class Collision : MonoBehaviour
                         if (joint.tag == "GameController" && HP < 50)
                         {
                             joint.Play();
+                            var main = joint.main;
+                            main.loop = true;
                         }
                     }
                 }
