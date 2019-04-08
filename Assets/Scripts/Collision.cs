@@ -13,6 +13,14 @@ public class Collision : MonoBehaviour
 
     private int totalDonut = 0;
     private float delay = 1f;
+    
+    public void takeDamage(float amount)
+    {
+
+        HP -= amount;
+
+        Debug.Log("HP: " + HP);
+    }
 
     private void Update()
     {
@@ -21,7 +29,7 @@ public class Collision : MonoBehaviour
         //donut respawn
         if (gameObject.name == "Donuts")
         {
-            if (transform.childCount < 3 && delay <= 0)
+            if (transform.childCount < 2 && delay <= 0)
             {
                 //get transform
                 Transform transform = gameObject.GetComponent<Transform>();
@@ -52,7 +60,7 @@ public class Collision : MonoBehaviour
         if (velocity > 1)
         {
             //decrease HP
-            HP -= velocity * 10f;
+            HP -= velocity;
             //effect
             if (effect != null)
                 Instantiate(effect, rigidbody.position, transform.rotation);
@@ -68,10 +76,15 @@ public class Collision : MonoBehaviour
                 {
                     gameObject.GetComponentInChildren<ParticleSystem>().Play();
                 }
+<<<<<<< HEAD
+=======
                 else if (gameObject.name == "tower" && HP <= 50)
                 {
                     gameObject.GetComponentInChildren<ParticleSystem>().Play();
+                    var main = gameObject.GetComponentInChildren<ParticleSystem>().main;
+                    main.loop = true;
                 }
+>>>>>>> 056e5e38154f76d8b42c922af7f7b0db6a390437
                 else if (gameObject.name == "Chair")
                 {
                     gameObject.GetComponentInChildren<ParticleSystem>().Play();
@@ -84,11 +97,29 @@ public class Collision : MonoBehaviour
                 {
                     gameObject.GetComponentInChildren<ParticleSystem>().Play();
                 }
+                else if (gameObject.name == "tower")
+                {
+                    Component[] PS = GetComponentsInChildren(typeof(ParticleSystem), true);
+
+                    foreach (ParticleSystem joint in PS)
+                    {
+                        if (joint.tag == "fire")
+                        {
+                            joint.Play();
+                        }
+                        if (joint.tag == "GameController" && HP < 50)
+                        {
+                            joint.Play();
+                        }
+                    }
+                }
             }
 
             //sound
             if (gameObject.GetComponentInChildren<AudioSource>() != null)
             {
+               
+                
                 gameObject.GetComponentInChildren<AudioSource>().pitch = Random.Range(.5f, 1f);
                 gameObject.GetComponentInChildren<AudioSource>().Play();
 
@@ -108,7 +139,6 @@ public class Collision : MonoBehaviour
                 Destroy(gameObject, 2);
                 Destroy(explode, 2);
             }
-
         }
     }
 }

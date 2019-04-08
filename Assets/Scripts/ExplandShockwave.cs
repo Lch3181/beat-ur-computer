@@ -13,7 +13,7 @@ public class ExplandShockwave : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (sphereCollider.radius <= 20)
-            sphereCollider.radius += 5;
+        if (sphereCollider.radius <= 10)
+            sphereCollider.radius += 2;
     }
 }
