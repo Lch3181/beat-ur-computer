@@ -13,12 +13,12 @@ GameObject:
   - component: {fileID: 8120336802049157162}
   - component: {fileID: 2128323348342833765}
   m_Layer: 0
-  m_Name: XP wallpaper
+  m_Name: wallpaper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &529624412503974169
 Transform:
   m_ObjectHideFlags: 0
