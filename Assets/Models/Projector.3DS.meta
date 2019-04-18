@@ -1,0 +1,225 @@
+fileFormatVersion: 2
+guid: 0b6b4afe153e1e24599cb63de71fda37
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Box01
+    100002: Box02
+    100004: Line01
+    100006: Line02
+    100008: Object01
+    100010: Object02
+    100012: //RootNode
+    400000: Box01
+    400002: Box02
+    400004: Line01
+    400006: Line02
+    400008: Object01
+    400010: Object02
+    400012: //RootNode
+    2100000: 'Material #127'
+    2100002: ',Black_'
+    2100004: chrome go
+    2100006: glass _
+    2100008: 'Material #130'
+    2100010: lamp_svet
+    2100012: 'Material #132'
+    2100014: 'Material #133'
+    2100016: _____5
+    2100018: 'Material #134'
+    2100020: 'Material #135'
+    2100022: 'Material #136'
+    2100024: 'Material #137'
+    2100026: 'Material #138'
+    2100028: 05 - Default
+    2100030: chrome go1
+    2100032: 'Material #139'
+    2300000: Box01
+    2300002: Box02
+    2300004: Line01
+    2300006: Line02
+    2300008: Object01
+    2300010: Object02
+    3300000: Box01
+    3300002: Box02
+    3300004: Line01
+    3300006: Line02
+    3300008: Object01
+    3300010: Object02
+    4300000: Box01
+    4300002: Box02
+    4300004: Line01
+    4300006: Line02
+    4300008: Object01
+    4300010: Object02
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ',Black_'
+    second: {fileID: 2100000, guid: d108fda3fab2dc2458c926a46768062a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 05 - Default
+    second: {fileID: 2100000, guid: 06cc8a5a5a186ce4ba372c72a2963430, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #127'
+    second: {fileID: 2100000, guid: f7edfeeaed21cdc42bb463bfc4693ce6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #130'
+    second: {fileID: 2100000, guid: 83a7fed75915bd84b85be6781dcd1bf0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #132'
+    second: {fileID: 2100000, guid: f4d7a20066c45174f8c472580681a754, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #133'
+    second: {fileID: 2100000, guid: c96361e8796890646b85850ab5fe394d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #134'
+    second: {fileID: 2100000, guid: c9e164ab1319c7b479de1cc852ace06b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #135'
+    second: {fileID: 2100000, guid: 4da4d91dfe57ddd43bc85c237a869c08, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #136'
+    second: {fileID: 2100000, guid: fc06e211fc1aef445bcfb5700de48894, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #137'
+    second: {fileID: 2100000, guid: c538f960d83bcff4aad182f396812e3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #138'
+    second: {fileID: 2100000, guid: 562122985c7e4dc419f614733ccc612e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #139'
+    second: {fileID: 2100000, guid: 9fa3243a381b60f47a157e2b1b6c9fcd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _____5
+    second: {fileID: 2100000, guid: 9c257b56119306e4a825c0ca5afab317, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chrome go
+    second: {fileID: 2100000, guid: b719cc9f79fe01e41aece3ab02ed644f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chrome go1
+    second: {fileID: 2100000, guid: dceb9666e39cb0349aa5a00f82eebb1f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass _
+    second: {fileID: 2100000, guid: f54b3eb5bd4f19e4dbff724e23b5aacf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lamp_svet
+    second: {fileID: 2100000, guid: f5b27be80f0b51f4ea96b01541092f32, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
