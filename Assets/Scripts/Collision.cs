@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class Collision : MonoBehaviour
 {
-    public GameObject gameObject;
     public GameObject effect;
     public GameObject explosion;
     public float HP;
@@ -40,7 +39,14 @@ public class Collision : MonoBehaviour
         if (velocity > 1)
         {
             //decrease HP
-            HP -= velocity;
+            if (velocity >= 25) 
+            {
+                HP -= 25;
+            }
+            else
+            {
+                HP -= velocity;
+            }
             //effect
             if (effect != null)
                 Instantiate(effect, rigidbody.position, transform.rotation);
@@ -74,16 +80,56 @@ public class Collision : MonoBehaviour
 
                     foreach (ParticleSystem joint in PS)
                     {
-                        if (joint.tag == "fire")
+                        if (joint.tag == "spark")
                         {
                             joint.Play();
                         }
-                        if (joint.tag == "GameController" && HP < 50)
+                        if (joint.tag == "smoke" && HP <= 50)
                         {
                             joint.Play();
                             var main = joint.main;
                             main.loop = true;
                         }
+                    }
+                }
+                else if(gameObject.name=="node_id30")//Printer
+                {
+                    Component[] PS = GetComponentsInChildren(typeof(ParticleSystem), true);
+
+                    foreach (ParticleSystem joint in PS)
+                    {
+                        if (joint.tag == "spark")
+                        {
+                            joint.Play();
+                        }
+                        if (joint.tag == "smoke" && HP <= 50)
+                        {
+                            joint.Play();
+                            var main = joint.main;
+                            main.loop = true;
+                        }
+                    }
+                }
+                else if (gameObject.name == "Box01")//Projector
+                {
+                    Component[] PS = GetComponentsInChildren(typeof(ParticleSystem), true);
+
+                    foreach (ParticleSystem joint in PS)
+                    {
+                        if (joint.tag == "spark")
+                        {
+                            joint.Play();
+                        }
+                        if (joint.tag == "smoke" && HP <= 50)
+                        {
+                            joint.Play();
+                            var main = joint.main;
+                            main.loop = true;
+                        }
+                    }
+                    if(HP<=50)//unlock lockPosition
+                    {
+                        gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
                     }
                 }
             }

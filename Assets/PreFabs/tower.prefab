@@ -422,7 +422,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObject: {fileID: 4857886091096261867}
-  Prefab: {fileID: 0}
   effect: {fileID: 0}
   explosion: {fileID: 0}
   HP: 100
@@ -441,7 +440,7 @@ PrefabInstance:
     - target: {fileID: 400800195534375620, guid: 3ed24f636638172428ee2820ea42dd9d,
         type: 3}
       propertyPath: m_TagString
-      value: fire
+      value: spark
       objectReference: {fileID: 0}
     - target: {fileID: 5425577384107682204, guid: 3ed24f636638172428ee2820ea42dd9d,
         type: 3}
@@ -524,7 +523,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1735024089641582, guid: 378b2c30ef426554495292cb902cb8f4, type: 3}
       propertyPath: m_TagString
-      value: GameController
+      value: smoke
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735024089641582, guid: 378b2c30ef426554495292cb902cb8f4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4221402037530588, guid: 378b2c30ef426554495292cb902cb8f4, type: 3}
       propertyPath: m_LocalPosition.x

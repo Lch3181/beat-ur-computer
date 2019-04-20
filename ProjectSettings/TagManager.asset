@@ -7,6 +7,8 @@ TagManager:
   - Shootable
   - Undefined
   - fire
+  - smoke
+  - spark
   layers:
   - Default
   - TransparentFX
@@ -20,7 +22,7 @@ TagManager:
   - Ground
   - Postprocessing
   - Shockwave
-  - 
+  - object
   - 
   - 
   - 

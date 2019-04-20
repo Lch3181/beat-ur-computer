@@ -3599,7 +3599,7 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     range: {x: 0, y: 1}
   CollisionModule:
-    enabled: 0
+    enabled: 1
     serializedVersion: 3
     type: 1
     collisionMode: 0
@@ -33145,7 +33145,8 @@ GameObject:
   - component: {fileID: 198166025632870074}
   - component: {fileID: 199280120914940710}
   - component: {fileID: 8084914163341432085}
-  - component: {fileID: 2657794611452574547}
+  - component: {fileID: 464374223863614866}
+  - component: {fileID: 8882339087002258635}
   m_Layer: 11
   m_Name: Shockwave
   m_TagString: Untagged
@@ -36693,7 +36694,7 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     range: {x: 0, y: 1}
   CollisionModule:
-    enabled: 0
+    enabled: 1
     serializedVersion: 3
     type: 1
     collisionMode: 0
@@ -37904,7 +37905,20 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2657794611452574547
+--- !u!114 &464374223863614866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754131149069982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a507219cc0e3ad49adb8fdb828e7324, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 100
+--- !u!114 &8882339087002258635
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

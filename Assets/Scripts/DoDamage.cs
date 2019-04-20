@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DoDamage : MonoBehaviour
 {
+    public float damageAmount = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,9 +19,17 @@ public class DoDamage : MonoBehaviour
 
     private void OnCollisionEnter(UnityEngine.Collision coll)
     {
-        float velocity = GetComponent<Rigidbody>().velocity.magnitude;
+        float velocity = 0;
 
-        coll.gameObject.GetComponent<Collision>().takeDamage(velocity);
+        if (GetComponent<Rigidbody>()!=null)
+            velocity = GetComponent<Rigidbody>().velocity.magnitude;
+
+        if(coll.gameObject.GetComponent<Collision>() != null)
+        {
+            coll.gameObject.GetComponent<Collision>().takeDamage(velocity);
+            coll.gameObject.GetComponent<Collision>().takeDamage(damageAmount);
+        }
+            
     }
 
 }

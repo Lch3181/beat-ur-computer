@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 8338854285702502035}
   - component: {fileID: 4249553367267824079}
   m_Layer: 0
-  m_Name: Particle System
-  m_TagString: Untagged
+  m_Name: spark
+  m_TagString: spark
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
