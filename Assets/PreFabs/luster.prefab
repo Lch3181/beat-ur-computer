@@ -80,6 +80,9 @@ GameObject:
   - component: {fileID: 4530168639144043541}
   - component: {fileID: 284088386771200544}
   - component: {fileID: 4575425694734339483}
+  - component: {fileID: 4559811716293849678}
+  - component: {fileID: 7356619028366770428}
+  - component: {fileID: 1674046029009483745}
   m_Layer: 0
   m_Name: luster
   m_TagString: Untagged
@@ -148,3 +151,42 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &4559811716293849678
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4338217854649445762}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8200002, y: 0.15087366, z: 5.2000012}
+  m_Center: {x: -0.000000029802322, y: -1.9245684, z: 1.009742e-28}
+--- !u!65 &7356619028366770428
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4338217854649445762}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.39670503, y: 2.0000052, z: 0.1371679}
+  m_Center: {x: -0.00000016391279, y: -1.0000026, z: -2.202807}
+--- !u!65 &1674046029009483745
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4338217854649445762}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.39670494, y: 2.0000052, z: 0.12602898}
+  m_Center: {x: -0.00000017881393, y: -1.0000026, z: 2.1972356}

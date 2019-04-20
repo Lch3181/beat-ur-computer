@@ -330,6 +330,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6833083388861470640}
+  - component: {fileID: 7026889670491822716}
+  - component: {fileID: 512102091840101793}
   m_Layer: 0
   m_Name: Projector
   m_TagString: Untagged
@@ -357,6 +359,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -4.499}
+--- !u!65 &7026889670491822716
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3180260107834177368}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.6414254, y: 0.77032846, z: 1.5133251}
+  m_Center: {x: 0.003872336, y: -0.3590926, z: -0.00000017881393}
+--- !u!65 &512102091840101793
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3180260107834177368}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.41336212, y: 0.7108095, z: 0.4011203}
+  m_Center: {x: 0.047990873, y: 0.35262838, z: 0.009871662}
 --- !u!1 &6058086843783242249
 GameObject:
   m_ObjectHideFlags: 0
