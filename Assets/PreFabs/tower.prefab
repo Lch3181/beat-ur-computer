@@ -421,7 +421,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9e05785a5036cd49a24d8173cdb3e3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObject: {fileID: 4857886091096261867}
   effect: {fileID: 0}
   explosion: {fileID: 0}
   HP: 100
@@ -496,6 +495,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5425577384107682204, guid: 3ed24f636638172428ee2820ea42dd9d,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.36157233
+      objectReference: {fileID: 0}
+    - target: {fileID: 5425577384107682204, guid: 3ed24f636638172428ee2820ea42dd9d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3615722
+      objectReference: {fileID: 0}
+    - target: {fileID: 5425577384107682204, guid: 3ed24f636638172428ee2820ea42dd9d,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.36157218
       objectReference: {fileID: 0}
     - target: {fileID: 8338854285702502035, guid: 3ed24f636638172428ee2820ea42dd9d,
         type: 3}
@@ -573,6 +587,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 199185188785216948, guid: 378b2c30ef426554495292cb902cb8f4,
+        type: 3}
+      propertyPath: m_Flip.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 199185188785216948, guid: 378b2c30ef426554495292cb902cb8f4,
+        type: 3}
+      propertyPath: m_Flip.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 198603562046773920, guid: 378b2c30ef426554495292cb902cb8f4,
         type: 3}
       propertyPath: UVModule.flipU
@@ -592,16 +616,6 @@ PrefabInstance:
         type: 3}
       propertyPath: looping
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 199185188785216948, guid: 378b2c30ef426554495292cb902cb8f4,
-        type: 3}
-      propertyPath: m_Flip.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 199185188785216948, guid: 378b2c30ef426554495292cb902cb8f4,
-        type: 3}
-      propertyPath: m_Flip.y
-      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 378b2c30ef426554495292cb902cb8f4, type: 3}

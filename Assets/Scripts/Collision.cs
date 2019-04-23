@@ -110,7 +110,7 @@ public class Collision : MonoBehaviour
                         }
                     }
                 }
-                else if (gameObject.name == "Box01")//Projector
+                else if (gameObject.name == "Projector")
                 {
                     Component[] PS = GetComponentsInChildren(typeof(ParticleSystem), true);
 
@@ -127,10 +127,14 @@ public class Collision : MonoBehaviour
                             main.loop = true;
                         }
                     }
-                    if(HP<=50)//unlock lockPosition
+                    if(HP<=50)//unlock Position
                     {
                         gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
                     }
+                }
+                else if(gameObject.transform.parent.name=="lusters")
+                {
+                    gameObject.GetComponentInChildren<ParticleSystem>().Play();
                 }
             }
 
