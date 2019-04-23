@@ -7,8 +7,8 @@ public class DonutRespawn : MonoBehaviour
 
     public GameObject gameObject;
     public GameObject Prefab;
-    private int totalDonut = 0;
-    private float delay = 5f;
+    public int totalDonut = 0;
+    private float delay = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +24,7 @@ public class DonutRespawn : MonoBehaviour
         //donut respawn
         if (gameObject.name == "Donuts")
         {
-            if (transform.childCount < 2 && delay <= 0)
+            if (totalDonut < 2 && delay <= 0)
             {
                 //get transform
                 Transform transform = gameObject.GetComponent<Transform>();
@@ -40,4 +40,10 @@ public class DonutRespawn : MonoBehaviour
             }
         }
     }
+
+    public void Decrease()
+    {
+        totalDonut--;
+    }
+
 }

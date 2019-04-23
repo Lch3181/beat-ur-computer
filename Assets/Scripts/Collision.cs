@@ -17,7 +17,7 @@ public class Collision : MonoBehaviour
 
         HP -= amount;
 
-        Debug.Log("HP: " + HP);
+        //Debug.Log("HP: " + HP);
     }
 
     private void Update()
@@ -147,16 +147,25 @@ public class Collision : MonoBehaviour
             //explosion
             if (explosion != null && HP <= 0)
             {
+                if(gameObject.name=="Donut(Clone)")
+                {
+                    //create explosion
+                    GameObject explode = Instantiate(explosion, rigidbody.position, Quaternion.identity) as GameObject;
 
-                //create explosion
-                GameObject explode = Instantiate(explosion, rigidbody.position, Quaternion.identity) as GameObject;
+                    //delete object
+                    gameObject.GetComponent<MeshCollider>().enabled = false;
+                    gameObject.GetComponent<MeshFilter>().mesh = null;
+                    gameObject.GetComponent<MeshRenderer>().enabled = false;
+                    Destroy(gameObject, 2);
+                    Destroy(explode, 2);
 
-                //delete object
-                gameObject.GetComponent<MeshCollider>().enabled = false;
-                gameObject.GetComponent<MeshFilter>().mesh = null;
-                gameObject.GetComponent<MeshRenderer>().enabled = false;
-                Destroy(gameObject, 2);
-                Destroy(explode, 2);
+                    GameObject Donuts = GameObject.Find("Donuts");
+                    if(Donuts.GetComponent<DonutRespawn>()!=null)
+                    {
+                        Donuts.GetComponent<DonutRespawn>().Decrease();
+                    }
+                }
+
             }
         }
     }
