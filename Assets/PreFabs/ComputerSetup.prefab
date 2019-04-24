@@ -37,6 +37,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2146004755757415961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7564155556641259493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44bc99e93b18cd54e9dafbe3ac47fc99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stage: 2
 --- !u!1001 &22500302605900123
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -546,11 +559,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4838346280418022009}
     m_Modifications:
-    - target: {fileID: 221262355433282403, guid: 761e9975f5330d0448ef010888d7d5ba,
-        type: 3}
-      propertyPath: m_Name
-      value: DisplayScreen1
-      objectReference: {fileID: 0}
     - target: {fileID: 5093272361093894452, guid: 761e9975f5330d0448ef010888d7d5ba,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -606,8 +614,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 221262355433282403, guid: 761e9975f5330d0448ef010888d7d5ba,
+        type: 3}
+      propertyPath: m_Name
+      value: DisplayScreen1
+      objectReference: {fileID: 0}
+    - target: {fileID: 221262355433282403, guid: 761e9975f5330d0448ef010888d7d5ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Screen
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7496568725309557258, guid: 761e9975f5330d0448ef010888d7d5ba, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 761e9975f5330d0448ef010888d7d5ba, type: 3}
+--- !u!1 &7564155556641259493 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 221262355433282403, guid: 761e9975f5330d0448ef010888d7d5ba,
+    type: 3}
+  m_PrefabInstance: {fileID: 7776401086681867398}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3262193466141275570 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5093272361093894452, guid: 761e9975f5330d0448ef010888d7d5ba,

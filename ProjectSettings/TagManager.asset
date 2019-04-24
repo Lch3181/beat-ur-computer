@@ -9,6 +9,7 @@ TagManager:
   - fire
   - smoke
   - spark
+  - Screen
   layers:
   - Default
   - TransparentFX

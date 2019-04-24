@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
+using Valve.VR.InteractionSystem;
 
 public class PlayVideo : MonoBehaviour
 {
@@ -18,12 +19,21 @@ public class PlayVideo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        LoginScreen = gameObject.transform.Find("LoginScreen");
-        wallpaper = gameObject.transform.Find("wallpaper");
-        ErrorScreen = gameObject.transform.Find("GreenScreenError");
-        Startup = gameObject.transform.Find("WindowsXP startup");
-        Shutdown = gameObject.transform.Find("WindowsXP shutdown");
-        BlueScreen = gameObject.transform.Find("BlueScreen");
+        GameObject screen = GameObject.FindWithTag("Screen");
+
+        LoginScreen = screen.transform.Find("LoginScreen");
+        wallpaper = screen.transform.Find("wallpaper");
+        ErrorScreen = screen.transform.Find("GreenScreenError");
+        Startup = screen.transform.Find("WindowsXP startup");
+        Shutdown = screen.transform.Find("WindowsXP shutdown");
+        BlueScreen = screen.transform.Find("BlueScreen");
+
+    }
+
+
+    void OnHandHoverBegin(Hand hand)
+    {
+        Play();
     }
 
     // Update is called once per frame
