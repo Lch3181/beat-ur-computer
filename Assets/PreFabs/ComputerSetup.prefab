@@ -132,6 +132,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4838346280418022009}
     m_Modifications:
+    - target: {fileID: 8707283390472018000, guid: 813cdac27d1cd754ca72bc2293bdc42a,
+        type: 3}
+      propertyPath: m_Name
+      value: Chair
+      objectReference: {fileID: 0}
     - target: {fileID: 1205520176980942709, guid: 813cdac27d1cd754ca72bc2293bdc42a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -201,11 +206,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 8707283390472018000, guid: 813cdac27d1cd754ca72bc2293bdc42a,
-        type: 3}
-      propertyPath: m_Name
-      value: Chair
       objectReference: {fileID: 0}
     - target: {fileID: 6691289223323821655, guid: 813cdac27d1cd754ca72bc2293bdc42a,
         type: 3}
@@ -409,6 +409,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4838346280418022009}
     m_Modifications:
+    - target: {fileID: 26918100874350271, guid: 8be1c0e3be4f5f04d87f63af6449d072,
+        type: 3}
+      propertyPath: m_Name
+      value: Keyboard
+      objectReference: {fileID: 0}
     - target: {fileID: 26918100874350270, guid: 8be1c0e3be4f5f04d87f63af6449d072,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -463,11 +468,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 26918100874350271, guid: 8be1c0e3be4f5f04d87f63af6449d072,
-        type: 3}
-      propertyPath: m_Name
-      value: Keyboard
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8be1c0e3be4f5f04d87f63af6449d072, type: 3}
@@ -559,6 +559,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4838346280418022009}
     m_Modifications:
+    - target: {fileID: 221262355433282403, guid: 761e9975f5330d0448ef010888d7d5ba,
+        type: 3}
+      propertyPath: m_Name
+      value: DisplayScreen1
+      objectReference: {fileID: 0}
+    - target: {fileID: 221262355433282403, guid: 761e9975f5330d0448ef010888d7d5ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 5093272361093894452, guid: 761e9975f5330d0448ef010888d7d5ba,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -613,16 +623,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 221262355433282403, guid: 761e9975f5330d0448ef010888d7d5ba,
-        type: 3}
-      propertyPath: m_Name
-      value: DisplayScreen1
-      objectReference: {fileID: 0}
-    - target: {fileID: 221262355433282403, guid: 761e9975f5330d0448ef010888d7d5ba,
-        type: 3}
-      propertyPath: m_TagString
-      value: Screen
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7496568725309557258, guid: 761e9975f5330d0448ef010888d7d5ba, type: 3}

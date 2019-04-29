@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class DonutRespawn : MonoBehaviour
 {
-
-    public GameObject gameObject;
     public GameObject Prefab;
     public int totalDonut = 0;
     private float delay = 0f;

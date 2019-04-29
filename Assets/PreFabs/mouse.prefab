@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8794732194919897155}
   - component: {fileID: 4378510289679731561}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,7 +43,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e6c5a2439c300ad4b88387a92d221973, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -5176,8 +5176,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9e05785a5036cd49a24d8173cdb3e3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObject: {fileID: 9171401492170075981}
-  Prefab: {fileID: 0}
   effect: {fileID: 0}
   explosion: {fileID: 0}
   HP: 100
