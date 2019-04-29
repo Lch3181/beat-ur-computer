@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Valve.VR.InteractionSystem;
 
 public class GameReset : MonoBehaviour
 {
@@ -15,6 +16,11 @@ public class GameReset : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void OnHandHoverBegin(Hand hand)
+    {
+        SceneManager.LoadScene("SampleScene");
     }
 
     //on click
