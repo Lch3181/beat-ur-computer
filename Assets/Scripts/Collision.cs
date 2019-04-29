@@ -176,7 +176,7 @@ public class Collision : MonoBehaviour
             }
 
             //explosion
-            if (explosion != null && HP <= 0)
+            if (explosion && HP <= 0)
             {
                 if(gameObject.name=="Donut(Clone)")
                 {
@@ -190,7 +190,7 @@ public class Collision : MonoBehaviour
                     Destroy(gameObject, 2);
                     Destroy(explode, 2);
 
-                    GameObject Donuts = GameObject.Find("Donuts");
+                    GameObject Donuts = GameObject.Find("weapons/Donuts");
                     if(Donuts.GetComponent<DonutRespawn>()!=null)
                     {
                         Donuts.GetComponent<DonutRespawn>().Decrease();

@@ -11,7 +11,7 @@ public class DonutRespawn : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -19,29 +19,36 @@ public class DonutRespawn : MonoBehaviour
     {
         delay -= Time.deltaTime;
 
-        //donut respawn
-        if (gameObject.name == "Donuts")
+        //reset to 0 if it became neg num
+        if (totalDonut < 0) 
         {
-            if (totalDonut < 2 && delay <= 0)
-            {
-                //get transform
-                Transform transform = gameObject.GetComponent<Transform>();
-                //spawn
-                var newDonut = Instantiate(Prefab, transform.position, Quaternion.identity);
-                newDonut.transform.parent = gameObject.transform;
-
-                //cooldown
-                delay = 5f;
-
-                //donut count
-                totalDonut++;
-            }
+            totalDonut = 0;
         }
+
+        //spawn donuts
+        if (totalDonut < 2 && delay <= 0)
+        {
+            //get transform
+            Transform transform = gameObject.GetComponent<Transform>();
+            //spawn
+            var newDonut = Instantiate(Prefab, transform.position, Quaternion.identity);
+            newDonut.transform.parent = gameObject.transform;
+
+            //cooldown
+            delay = 5f;
+
+            //donut count
+            totalDonut++;
+        }
+
+        
+
     }
 
     public void Decrease()
     {
         totalDonut--;
+        delay = 5;
     }
 
 }
