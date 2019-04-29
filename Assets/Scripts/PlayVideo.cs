@@ -8,7 +8,6 @@ public class PlayVideo : MonoBehaviour
 {
     public int stage = 2;
     private double delay = 0;
-    private Random random = new Random();
     Transform LoginScreen;
     Transform wallpaper;
     Transform ErrorScreen;
@@ -19,14 +18,13 @@ public class PlayVideo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameObject screen = GameObject.FindWithTag("Screen");
 
-        LoginScreen = screen.transform.Find("LoginScreen");
-        wallpaper = screen.transform.Find("wallpaper");
-        ErrorScreen = screen.transform.Find("GreenScreenError");
-        Startup = screen.transform.Find("WindowsXP startup");
-        Shutdown = screen.transform.Find("WindowsXP shutdown");
-        BlueScreen = screen.transform.Find("BlueScreen");
+        LoginScreen = gameObject.transform.Find("LoginScreen");
+        wallpaper = gameObject.transform.Find("wallpaper");
+        ErrorScreen = gameObject.transform.Find("GreenScreenError");
+        Startup = gameObject.transform.Find("WindowsXP startup");
+        Shutdown = gameObject.transform.Find("WindowsXP shutdown");
+        BlueScreen = gameObject.transform.Find("BlueScreen");
 
     }
 
@@ -46,6 +44,7 @@ public class PlayVideo : MonoBehaviour
         {
             Startup.gameObject.SetActive(false);
             LoginScreen.gameObject.SetActive(true);
+            delay = 3;
             stage = 2;
         }
         //Green screen error loop after login at a random time and disable shutdown

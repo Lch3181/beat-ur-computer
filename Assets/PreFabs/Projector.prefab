@@ -120,7 +120,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6dd3911d3dbf7e3419899f8dc1b9fb71, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -535,6 +535,8 @@ GameObject:
   - component: {fileID: 6071389844090126799}
   - component: {fileID: 1413041315811871561}
   - component: {fileID: 1650036033878982825}
+  - component: {fileID: 4736397446049690497}
+  - component: {fileID: 712644484379245929}
   m_Layer: 0
   m_Name: Projector
   m_TagString: Untagged
@@ -594,7 +596,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 126
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!114 &8244322515347384188
 MonoBehaviour:
@@ -718,6 +720,32 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.45903587, y: 0.76359653, z: 0.38433367}
   m_Center: {x: 0.06562312, y: 0.33948418, z: 0.008100897}
+--- !u!138 &4736397446049690497
+FixedJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3180260107834177368}
+  m_ConnectedBody: {fileID: 0}
+  m_BreakForce: 10000
+  m_BreakTorque: 10000
+  m_EnableCollision: 1
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
+--- !u!114 &712644484379245929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3180260107834177368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3c4308705116684dbe531ae3ee4ffb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6058086843783242249
 GameObject:
   m_ObjectHideFlags: 0
